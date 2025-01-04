@@ -32,7 +32,8 @@ To bring **Ephemera** to life, you'll need a carefully chosen set of components 
   A module for interfacing with micro SD cards.  
   Operates at 4.5V–5.5V DC with a current range of 0.2mA–200mA.  
   Communicates via a standard SPI interface (3.3V or 5V logic level).  
-  Compatible with Micro SD cards (up to 2GB) and Micro SDHC cards (up to 32GB).  
+  Compatible with Micro SD cards (up to 2dB) and Micro SDHC cards (up to 32GB).
+  Note this version does not take SDXC cards. Maybe orther card modules will. I have not tested.   
   Control pins:  
   - **GND**: Ground  
   - **3V3**: Power supply  
