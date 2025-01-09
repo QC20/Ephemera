@@ -60,15 +60,13 @@ To bring **Ephemera** to life, you'll need a carefully chosen set of components 
 ### Total Cost for Essential Components: ~627.50 DKK
 
 
-## 
-
-
+---
 
 ### Assembly Instructions: Soldering Components to the PCB Board
 
 To begin assembly, carefully solder the components onto the PCB board following the silkscreen markings. The silkscreen provides clear indicators for the placement of each component based on its corresponding number. Refer to the table below for a detailed list of components and their specifications.
 
----
+
 
 ### Component List
 
