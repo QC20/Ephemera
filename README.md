@@ -87,6 +87,12 @@ To begin assembly, carefully solder the components onto the PCB board following 
 
 ---
 
+### EEPROM & Image Sequence
+
+As the program's logic maintains the position of the image sequence using EEPROM memory, which persists even when powered off. To force the display to restart from the first image, you'll need to clear the EEPROM using the provided erase program before uploading the main program again.
+
+The included `delete-eeprom.ino` will reset the counter to zero, meaning you will be able to show images starting from 'bmp-001'.
+
 
 
 *Capture the moment. Tomorrow brings something new.*
