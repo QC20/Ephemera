@@ -69,8 +69,39 @@ To bring **Ephemera** to life, you'll need a carefully chosen set of components 
 ### Total Cost for Essential Components: ~627.50 DKK
 
 
+---
+
+### Assembly Instructions: Soldering Components to the PCB Board
+
+To begin assembly, carefully solder the components onto the PCB board following the silkscreen markings. The silkscreen provides clear indicators for the placement of each component based on its corresponding number. Refer to the table below for a detailed list of components and their specifications.
+
+
+
+### Component List
+
+| **Component Number** | **Part**                         |
+|-----------------------|----------------------------------|
+| C1, C2               | 22pF                            |
+| C3, C4, C5           | 100nF                           |
+| D1                   | General Purpose Diode           |
+| J1, J2               | Male Connector 01x06 Pin        |
+| J3                   | Male Connector 01x08 Pin        |
+| J4                   | Male Connector 01x02 Pin        |
+| Q1                   | PMOS - LP0701N3-G               |
+| R1                   | 10K Resistor                    |
+| R2, R3               | 100K Resistor                   |
+| SW1                  | Push Button Switch              |
+| U1                   | 28 Pin Connector for ATmega328-P|
+| Y1                   | 16MHz Crystal                   |
+
+---
+
+### EEPROM & Image Sequence
+
+As the program's logic maintains the position of the image sequence using EEPROM memory, which persists even when powered off. To force the display to restart from the first image, you'll need to clear the EEPROM using the provided erase program before uploading the main program again.
+
+The included `delete-eeprom.ino` will reset the counter to zero, meaning you will be able to show images starting from 'bmp-001'.
+
 
 
 *Capture the moment. Tomorrow brings something new.*
-
-
