@@ -15,7 +15,6 @@ Whether you're here for daily inspiration, a unique view, or just curious to see
 ---
 
 
-
 ### Components Used in this Project
 To bring **Ephemera** to life, you'll need a carefully chosen set of components to ensure low power consumption and seamless operation. Below is a detailed list of the required parts, along with their approximate costs in DKK, to help you build your own dynamic e-paper display.
 
