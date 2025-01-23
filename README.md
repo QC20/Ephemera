@@ -14,7 +14,16 @@ Whether you're here for daily inspiration, a unique view, or just curious to see
 
 ---
 
+### The Display 
 
+The Waveshare 7.3" ACeP 7-Color display supports 7 colors (black, white, red, green, blue, orange and yellow).
+
+### Frame Dimensions
+
+The following dimensions are designed to fit the display, so the frame can be any size as long as it accommodates these internal measurements. However, it’s important to ensure there is enough space on the backside for the components. Depending on the battery type you use, the most protruding components will be the crystal and the wires on the PCB, which extend about 10mm. If you can find a  deep frame that allows for this additional space, it would be the ideal solution.
+
+**Dimensions (inches):**  in 5 (L) x 7 in (W)
+**Dimensions (mm):** 192 mm (L) x 222 mm (W)
 
 ### Components Used in this Project
 To bring **Ephemera** to life, you'll need a carefully chosen set of components to ensure low power consumption and seamless operation. Below is a detailed list of the required parts, along with their approximate costs in DKK, to help you build your own dynamic e-paper display.
