@@ -39,8 +39,17 @@ To bring **Ephemera** to life, you'll need a carefully chosen set of components 
 
 - **Micro SD Card Module (~2.80 DKK each):**  
   A module for interfacing with micro SD cards.  
+  Operates at 4.5V–5.5V DC with a current range of 0.2mA–200mA.  
+  Communicates via a standard SPI interface (3.3V or 5V logic level).  
+  Compatible with Micro SD cards (up to 2dB) and Micro SDHC cards (up to 32GB).
+  Note this version does not take SDXC cards. Maybe orther card modules will. I have not tested.   
+  Control pins:  
+  - **GND**: Ground  
+  - **3V3**: Power supply  
+  - **MISO, MOSI, CLK**: SPI bus  
+  - **CS**: Chip select signal pin  
   *(Dimensions: 18mm x 18mm)*  
-  [Buy here](hhttps://de.aliexpress.com/item/1005005591145849.html?spm=a2g0o.productlist.main.3.a9e0333916KKv5&algo_pvid=ddaef2a1-d621-4a9a-8b38-0c9e925de657&algo_exp_id=ddaef2a1-d621-4a9a-8b38-0c9e925de657-1&pdp_npi=4%40dis%21EUR%211.85%211.85%21%21%211.96%211.96%21%40210390b817295128395262508eb456%2112000033669348102%21sea%21DE%213852088484%21X&curPageLogUid=DYdi0FD60FO3&utparam-url=scene%3Asearch%7Cquery_from%3A)
+  [Buy here](https://de.aliexpress.com/item/1005005591145849.html?spm=a2g0o.productlist.main.3.a9e0333916KKv5&algo_pvid=ddaef2a1-d621-4a9a-8b38-0c9e925de657&algo_exp_id=ddaef2a1-d621-4a9a-8b38-0c9e925de657-1&pdp_npi=4%40dis%21EUR%211.85%211.85%21%21%211.96%211.96%21%40210390b817295128395262508eb456%2112000033669348102%21sea%21DE%213852088484%21X&curPageLogUid=DYdi0FD60FO3&utparam-url=scene%3Asearch%7Cquery_from%3A)
 
 - **Waveshare 7.3-inch ACeP 7-Color E-Paper E-Ink Display Module + HAT (~522.80 DKK):**  
   A seven-color e-paper display module with SPI communication, featuring 800×480 resolution.  
