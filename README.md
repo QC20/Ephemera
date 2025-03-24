@@ -14,7 +14,16 @@ Whether you're here for daily inspiration, a unique view, or just curious to see
 
 ---
 
+### The Display 
 
+The Waveshare 7.3" ACeP 7-Color display supports 7 colors (black, white, red, green, blue, orange and yellow).
+
+### Frame Dimensions
+
+The following dimensions are designed to fit the display, so the frame can be any size as long as it accommodates these internal measurements. However, it’s important to ensure there is enough space on the backside for the components. Depending on the battery type you use, the most protruding components will be the crystal and the wires on the PCB, which extend about 10mm. If you can find a  deep frame that allows for this additional space, it would be the ideal solution.
+
+**Dimensions (inches):**  in 5 (L) x 7 in (W)
+**Dimensions (mm):** 192 mm (L) x 222 mm (W)
 
 ### Components Used in this Project
 To bring **Ephemera** to life, you'll need a carefully chosen set of components to ensure low power consumption and seamless operation. Below is a detailed list of the required parts, along with their approximate costs in DKK, to help you build your own dynamic e-paper display.
@@ -30,8 +39,17 @@ To bring **Ephemera** to life, you'll need a carefully chosen set of components 
 
 - **Micro SD Card Module (~2.80 DKK each):**  
   A module for interfacing with micro SD cards.  
+  Operates at 4.5V–5.5V DC with a current range of 0.2mA–200mA.  
+  Communicates via a standard SPI interface (3.3V or 5V logic level).  
+  Compatible with Micro SD cards (up to 2dB) and Micro SDHC cards (up to 32GB).
+  Note this version does not take SDXC cards. Maybe orther card modules will. I have not tested.   
+  Control pins:  
+  - **GND**: Ground  
+  - **3V3**: Power supply  
+  - **MISO, MOSI, CLK**: SPI bus  
+  - **CS**: Chip select signal pin  
   *(Dimensions: 18mm x 18mm)*  
-  [Buy here](hhttps://de.aliexpress.com/item/1005005591145849.html?spm=a2g0o.productlist.main.3.a9e0333916KKv5&algo_pvid=ddaef2a1-d621-4a9a-8b38-0c9e925de657&algo_exp_id=ddaef2a1-d621-4a9a-8b38-0c9e925de657-1&pdp_npi=4%40dis%21EUR%211.85%211.85%21%21%211.96%211.96%21%40210390b817295128395262508eb456%2112000033669348102%21sea%21DE%213852088484%21X&curPageLogUid=DYdi0FD60FO3&utparam-url=scene%3Asearch%7Cquery_from%3A)
+  [Buy here](https://de.aliexpress.com/item/1005005591145849.html?spm=a2g0o.productlist.main.3.a9e0333916KKv5&algo_pvid=ddaef2a1-d621-4a9a-8b38-0c9e925de657&algo_exp_id=ddaef2a1-d621-4a9a-8b38-0c9e925de657-1&pdp_npi=4%40dis%21EUR%211.85%211.85%21%21%211.96%211.96%21%40210390b817295128395262508eb456%2112000033669348102%21sea%21DE%213852088484%21X&curPageLogUid=DYdi0FD60FO3&utparam-url=scene%3Asearch%7Cquery_from%3A)
 
 - **Waveshare 7.3-inch ACeP 7-Color E-Paper E-Ink Display Module + HAT (~522.80 DKK):**  
   A seven-color e-paper display module with SPI communication, featuring 800×480 resolution.  
@@ -60,8 +78,39 @@ To bring **Ephemera** to life, you'll need a carefully chosen set of components 
 ### Total Cost for Essential Components: ~627.50 DKK
 
 
+---
+
+### Assembly Instructions: Soldering Components to the PCB Board
+
+To begin assembly, carefully solder the components onto the PCB board following the silkscreen markings. The silkscreen provides clear indicators for the placement of each component based on its corresponding number. Refer to the table below for a detailed list of components and their specifications.
+
+
+
+### Component List
+
+| **Component Number** | **Part**                         |
+|-----------------------|----------------------------------|
+| C1, C2               | 22pF                            |
+| C3, C4, C5           | 100nF                           |
+| D1                   | General Purpose Diode           |
+| J1, J2               | Male Connector 01x06 Pin        |
+| J3                   | Male Connector 01x08 Pin        |
+| J4                   | Male Connector 01x02 Pin        |
+| Q1                   | PMOS - LP0701N3-G               |
+| R1                   | 10K Resistor                    |
+| R2, R3               | 100K Resistor                   |
+| SW1                  | Push Button Switch              |
+| U1                   | 28 Pin Connector for ATmega328-P|
+| Y1                   | 16MHz Crystal                   |
+
+---
+
+### EEPROM & Image Sequence
+
+As the program's logic maintains the position of the image sequence using EEPROM memory, which persists even when powered off. To force the display to restart from the first image, you'll need to clear the EEPROM using the provided erase program before uploading the main program again.
+
+The included `delete-eeprom.ino` will reset the counter to zero, meaning you will be able to show images starting from 'bmp-001'.
+
 
 
 *Capture the moment. Tomorrow brings something new.*
-
-
